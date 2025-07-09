@@ -3,11 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
 
 
 
@@ -317,7 +312,7 @@ main {
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
-  overflow: hidden;
+ 
   transition: var(--transition-2);
 }
 
@@ -411,8 +406,8 @@ main {
 }
 
 .contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+  max-width: calc(100% - 22px);
+  width: calc(100% - 22px);
 }
 
 .contact-title {
@@ -730,17 +725,11 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
+  flex-direction: column; /* vertical layout */
+  gap: 30px;
   padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .clients-item {
@@ -749,7 +738,8 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 30%;
+  height: 30%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
